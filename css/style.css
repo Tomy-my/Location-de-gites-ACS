@@ -1,0 +1,61 @@
+/* -------------------------------Settings------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #EDEDED;
+  background-color: #EDEDED;
+  background-image: url('../img/background-logo.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 25% 0%;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #575757;
+  cursor: pointer;
+}
+a:visited, a:link {
+  color: #575757;
+}
+
+/* -------------------------------------------------------------- */
+
+
+/* -------------------------------Navigation------------------------------- */
+
+nav{
+    display: flex;
+    justify-content: flex-start;
+
+    /* background-color: black; */
+
+    padding: 5px 150px 5px 150px;
+    box-shadow: 0px 4px 9px 0px #0000002E;
+
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#logo{
+    width: 100px;
+    height: 100px;
+
+    margin-right: 100px;
+}
+
+#index, #gites, #aPropos, #contact{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 70px;
+}
+
+#contact{
+    margin-right: 0px;
+}
