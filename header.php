@@ -14,7 +14,7 @@
 	</head>
     <body>
 		<nav>
-            <img id="logo" src="img/logo.svg" alt="Logo du site">
+            <img id="logo" src="img/logo.svg" alt="Logo du site" onclick="document.location.href='index.php'">
             <div id="index" ><a href="index.php"        <?php if ($lien_actif == 'accueil') {echo ' style="color:#C8A45D;"';} ?>    >Accueil</a></div>
             <div id="gites" ><a href="gîtes.php"        <?php if ($lien_actif == 'gite') {echo ' style="color:#C8A45D;"';} ?>    >Nos Gîtes</a></div>
             <div id="aPropos" ><a href="à-propos.php"   <?php if ($lien_actif == 'propos') {echo ' style="color:#C8A45D;"';} ?> >À Propos</a></div>
