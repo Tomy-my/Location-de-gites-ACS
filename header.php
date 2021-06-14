@@ -36,5 +36,14 @@
                 <hr>
                 <button id="search">Vérifier</button>
             </div>
+            <div class="form_connexion">
+                <img id="logo1" src="img/logo.svg" alt="Logo du site">
+                <h3>Espace administrateur</h3>
+                <input id="select_chambre" type="text" name="username" placeholder="Nom d'utilisateur">
+                <hr id="select_hr">
+                <input id="select_chambre" type="password" name="username" placeholder="Mot de passe">
+                <hr id="select_hr">
+                <button id="connexion">Connexion</button>
+            </div>
             <button id="exit"><i class="fas fa-times"></i></button>
         </nav>

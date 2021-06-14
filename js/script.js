@@ -1,3 +1,4 @@
+// Reservation 
 let buttonRsv = document.querySelector("#rsv");
 let navigation = document.querySelector("nav");
 let formSearch = document.querySelector(".form_search");
@@ -26,22 +27,41 @@ buttonRsv.addEventListener("click", function() {
             }, 200);
 })
 
+// Connexion
+let clickAdmin = document.querySelector("#logo1");
+let formConnexion = document.querySelector(".form_connexion");
 
-let exitButtonRsv = document.querySelector("#rsv");
-let exitNavigation = document.querySelector("nav");
-let exitFormSearch = document.querySelector(".form_search");
-let exitExit = document.querySelector("#exit");
+clickAdmin.addEventListener("click", function(){
+    formSearch.style.top = "-745px";
 
-exitExit.addEventListener("click", function() {
+    setTimeout(function() {
+        formSearch.style.display = "none";
+        }, 1000);
+
+        setTimeout(function() {
+            formConnexion.style.display = "flex";
+            }, 1100);
+
+            setTimeout(function() {
+                formConnexion.style.top = "0px";
+                }, 1200);
+})
+
+// tout quitter
+exit.addEventListener("click", function() {
     
-    exitFormSearch.style.display = "none";
-    exitExit.style.display = "none";
-    exitButtonRsv.style.display = "block";
-    exitNavigation.style.height = "110px";
-    exitFormSearch.style.top = "-745px";
+    exit.style.display = "none";
+    navigation.style.height = "110px";
+    formSearch.style.top = "-745px";
+    formConnexion.style.top = "-745px";
 
     body.style.overflowY = "scroll"
 
     window.onscroll = function() {};
-    
+
+    setTimeout(function() {
+        formSearch.style.display = "none";
+        formConnexion.style.display = "none";
+        buttonRsv.style.display = "block";
+        }, 600);
 })

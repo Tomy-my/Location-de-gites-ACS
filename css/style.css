@@ -52,6 +52,8 @@ nav {
   height: 100px;
 
   margin-right: 100px;
+  
+  cursor: pointer;
 }
 
 #index,
@@ -86,6 +88,8 @@ nav {
   font-family: "Roboto", sans-serif;
 
   transition-duration: 0.3s;
+
+  cursor: pointer;
 }
 
 #exit{
@@ -100,6 +104,8 @@ nav {
 
   font-size: 40px;
   color: #C8A45D;
+
+  cursor: pointer;
 }
 
 /* -----Animation Navigation----- */
@@ -212,9 +218,108 @@ nav {
   border: solid 1px black;
   border-bottom: none;
   color: #ffffff;
+
+  cursor: pointer;
 }
 
 #search:hover{
+  background-color: rgb(207, 176, 114);
+}
+
+/* -------------------------------------------------------------- */
+
+/* -------------------------------Formulaire search nav------------------------------- */
+
+.form_connexion {
+  position: relative;
+
+  display: none;
+  /* display: flex; */
+  flex-direction: column;
+
+  width: 330px;
+  height: 474px;
+
+  padding: 20px;
+
+  top: -745px;
+
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 240px;
+
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%),
+    rgba(203, 203, 203, 0.46);
+  border: 1px solid #000000;
+
+  transition: all 1.3s ease;
+}
+
+#logo1 {
+  width: 55%;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.form_connexion h3 {
+  margin-top: 5px;
+  margin-bottom: 30px;
+
+  font-size: 19px;
+  font-weight: normal;
+  
+  color: #c8a45d;
+}
+
+#select_chambre {
+  margin-bottom: 15px;
+
+  border: none;
+  background-color: rgba(87, 87, 87, 0);
+
+  color: #575757;
+  font-size: 22px;
+}
+
+#select_hr {
+  width: 100%;
+  margin-left: auto;
+  margin-bottom: 25px;
+}
+
+.form_connexion hr {
+  width: 86%;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+
+.form_connexion span {
+  margin-left: 15px;
+  font-size: 21px;
+}
+
+#connexion {
+  width: 330px;
+  height: 58px;
+  margin-top: 11px;
+  margin-left: -21px;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  font-size: 20px;
+  background-color: #c4a464;
+  border: solid 1px black;
+  border-bottom: none;
+  color: #ffffff;
+
+  cursor: pointer;
+}
+
+#connexion:hover{
   background-color: rgb(207, 176, 114);
 }
 
