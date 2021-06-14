@@ -274,7 +274,7 @@ nav {
   color: #c8a45d;
 }
 
-#select_chambre {
+.form_connexion input {
   margin-bottom: 15px;
 
   border: none;
@@ -284,7 +284,7 @@ nav {
   font-size: 22px;
 }
 
-#select_hr {
+#input_hr {
   width: 100%;
   margin-left: auto;
   margin-bottom: 25px;
