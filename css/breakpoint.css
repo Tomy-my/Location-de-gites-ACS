@@ -1,0 +1,27 @@
+/* -------------------------------Navigation------------------------------- */
+@media only screen and (max-width : 1660px){  
+    .form_search{
+        margin-right: 166px;
+    }
+}
+@media only screen and (max-width : 1592px){  
+    .form_search{
+        margin-right: 85px;
+    }
+}
+@media only screen and (max-width : 1500px){ 
+    nav{
+        padding: 5px 35px 5px 35px ;
+    } 
+    .form_search{
+        margin-right: 165px;
+    }
+}
+@media only screen and (max-width : 1500px){ 
+    .form_search{
+        margin-right: 75px;
+    }
+}
+/* -------------------------------------------------------------- */
+
+/* -------------------------------      ------------------------------- */
