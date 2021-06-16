@@ -1,6 +1,3 @@
-<?php
-    require_once('controller/config_bdd.php');
-?>
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
@@ -23,7 +20,7 @@
             <div id="aPropos" ><a href="à-propos.php"   <?php if ($lien_actif == 'propos') {echo ' style="color:#C8A45D;"';} ?> >À Propos</a></div>
             <div id="contact" ><a href="contact.php"    <?php if ($lien_actif == 'contact') {echo ' style="color:#C8A45D;"';} ?>  >Contact</a></div>
             <button id="rsv"><i class="far fa-calendar-alt"></i>&ensp; Réservation</button>
-            <div class="form_search">
+            <form class="form_search" method="post">
                 <img id="logo1" src="img/logo.svg" alt="Logo du site">
                 <h3>Je souhaiterais séjourner dans</h3>
                 <select id="select_chambre">
@@ -38,15 +35,17 @@
                 <div id="au"><p>Au <span><i class="far fa-calendar-alt"></i> &ensp;Départ</span></p></div>
                 <hr>
                 <button id="search">Vérifier</button>
-            </div>
-            <div class="form_connexion">
+            </form>
+            <?php include_once "controller/login.php"; ?>
+            <form class="form_connexion" method="post">
                 <img id="logo1" src="img/logo.svg" alt="Logo du site">
                 <h3>Espace administrateur</h3>
-                <input type="text" name="username" placeholder="Nom d'utilisateur">
+                <input type="text" name="username" placeholder="Email">
                 <hr id="input_hr">
-                <input type="password" name="username" placeholder="Mot de passe">
+                <input type="password" name="password" placeholder="Mot de passe">
                 <hr id="input_hr">
-                <button id="connexion">Connexion</button>
-            </div>
+                <button id="connexion" type="submit" name="submit">Connexion</button>
+            </form>
             <button id="exit"><i class="fas fa-times"></i></button>
+            <?php if(isset($erreur)){echo $erreur;}?>
         </nav>

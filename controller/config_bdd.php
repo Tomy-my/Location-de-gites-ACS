@@ -1,5 +1,5 @@
 <?php
-class configBdd{
+class configBdd{  // C'est mon gateau
     protected $hostname = "localhost";
     protected $username = "root";
     protected $password ="";
@@ -15,11 +15,11 @@ class configBdd{
         $this->bddPDO=$this->connectBase();
     }
 
-protected function connectBase(){
+protected function connectBase(){ // Avec ce gateau, je veux faire ca 
     try{
-        $bdd=new PDO("mysql:host=$this->hostname;dbname=$this->basename",$this->username, $this->password);
-        $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        return $bdd;
+        $db=new PDO("mysql:host=$this->hostname;dbname=$this->basename",$this->username, $this->password);
+        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        return $db;
     }
     catch(PDOException $e){
         echo 'Echec de la connexion'.  $e->getMessage();
