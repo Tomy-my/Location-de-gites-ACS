@@ -1,3 +1,6 @@
+<?php
+    require_once('controller/config_bdd.php');
+?>
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
