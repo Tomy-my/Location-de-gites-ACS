@@ -418,6 +418,215 @@ nav {
   }
 }
 
+/* -------------------------------------------------------------- */
+
+/* ------------------------------- Gite------------------------------- */
+
+.container_gite{
+  padding: 100px;
+}
+
+.container_gite h1{
+  margin-bottom: 10px;
+
+  text-align: center;
+
+  font-size: 65px;
+  font-weight: 500;
+  font-family: 'Dancing Script', cursive;
+}
+
+.desc_gite{
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  margin-top: 25px;
+
+  top: 0px;
+
+  transition: all 1.5s ease;
+  
+  animation: 1.5s ease containerGite;
+
+}
+
+.img_gite{
+  width: 50%;
+  margin-left: auto;
+}
+
+.img_gite img{
+  display: block;
+
+  width: 80%;
+  margin: auto;
+
+  border: solid 1px #5757573b;
+  box-shadow: 0px 4px 9px 0px #0000002e;
+
+  cursor: zoom-in;
+
+  transition-duration: 0.2s;
+}
+
+.more_img{
+  display: none;
+
+  width: 100%;
+}
+
+.more_img img{
+  display: block;
+
+  width: 80%;
+  margin: 10px;
+
+  border: solid 1px #5757573b;
+  box-shadow: 0px 4px 9px 0px #0000002e;
+
+}
+
+#back_zoom{
+  display: none;
+
+  width: 220px;
+  height: 60px;
+
+  margin-top: 30px;
+  margin-left: auto;
+
+  background-color: #c4a464;
+  border: solid 1px #977f4f;
+  box-shadow: 0px 4px 9px 0px #0000004f;
+
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+
+  transition-duration: 0.3s;
+
+  cursor: pointer;
+}
+
+.desc_text_gite{
+  width: 50%;
+
+  padding: 15px;
+
+  border-left: solid 2px #575757;;
+}
+
+#desc_titre{
+  margin-bottom: 10px;
+}
+
+#desc_p{
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+#sp{
+  margin-top: 10px;
+  margin-left: 10px;
+  
+  color: #0000007a;
+}
+
+#couchage_titre{
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+#svg_icon{
+  width: 30px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.equipements{
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 20px;
+}
+
+#equipement_titre{
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+#wifi, #tv, #cuisine, #animaux, #linge, #couchage{
+  display: flex;
+  
+  margin-left: 10px;
+}
+
+#couchage{
+  margin-bottom: 10px;
+}
+
+.equipements p, #couchage p{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 15px;
+}
+
+#rsv_offre{
+  display: block;
+
+  width: 220px;
+  height: 60px;
+
+  margin-top: 30px;
+  margin-left: 10px;
+
+  background-color: #c4a464;
+  border: solid 1px #977f4f;
+  box-shadow: 0px 4px 9px 0px #0000004f;
+
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+
+  transition-duration: 0.3s;
+
+  cursor: pointer;
+}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----Animation Gite----- */
+@keyframes containerGite {
+  0%{
+    top: 1000px;
+  }
+  100%{
+    top: 0px;
+  }
+}
+.img_gite img:hover{
+  width: 81%;
+}
+
+#rsv_offre:hover {
+  background-color: rgb(207, 176, 114);
+}
+/* -------------------------------------------------------------- */
+
+/* -------------------------------      ------------------------------- */

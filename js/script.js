@@ -65,3 +65,66 @@ exit.addEventListener("click", function() {
         buttonRsv.style.display = "block";
         }, 600);
 })
+
+
+
+
+//Zoom img gîte
+let zoomImg = document.querySelector(".img_gite img");
+
+let moreImg = document.querySelector(".more_img");
+
+let containerImg = document.querySelector(".img_gite")
+let containerDesc = document.querySelector(".desc_gite");
+let containerDescText = document.querySelector(".desc_text_gite");
+
+let backZoom = document.querySelector("#back_zoom");
+
+zoomImg.addEventListener("click", function(){
+
+    containerDesc.style.top = "1000px";
+    
+    setTimeout(function() {
+        moreImg.style.display = "flex";
+
+        containerImg.style.display = "none";
+        
+        containerDescText.style.display = "none";
+        
+        containerDesc.style.display = "block";
+        containerDesc.style.marginTop = "0px";
+    
+    
+        backZoom.style.display = "block";
+        }, 1000);
+
+        setTimeout(function() {
+            containerDesc.style.top = "0px";
+
+            }, 1100);
+})
+
+
+// back zoom img gîte
+backZoom.addEventListener("click", function() {
+    containerDesc.style.top = "1000px";
+    
+    setTimeout(function() {
+        moreImg.style.display = "none";
+
+        containerImg.style.display = "block";
+        
+        containerDescText.style.display = "block";
+        
+        containerDesc.style.display = "flex";
+        containerDesc.style.marginTop = "25px";
+    
+    
+        backZoom.style.display = "none";
+        }, 1000);
+
+        setTimeout(function() {
+            containerDesc.style.top = "0px";
+
+            }, 1100);
+})
