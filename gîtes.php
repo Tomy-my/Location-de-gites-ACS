@@ -14,8 +14,8 @@ include('header.php');
             </div>
             <div class="more_img">
                     <img src="img/gite/basic.jpg" alt="#" />
-                    <img src="img/gite/basic.jpg" alt="#" />
-                    <img src="img/gite/basic.jpg" alt="#" />
+                    <img src="img/gite/basic2.jpg" alt="#" />
+                    <img src="img/gite/basic3.jpg" alt="#" />
             </div>
             <button id="back_zoom"><i class="fas fa-arrow-left"></i>&ensp; Retour en arrière</button>
             <div class="desc_text_gite">

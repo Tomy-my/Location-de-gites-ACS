@@ -325,6 +325,32 @@ nav {
 
 /* -------------------------------------------------------------- */
 
+/* -------------------------------Header/Admin------------------------------- */
+#dash_btn, 
+#add_btn, 
+#deco_btn {
+  width: 220px;
+  height: 60px;
+
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+
+  background-color: #c4a464;
+  border: solid 1px #977f4f;
+  box-shadow: 0px 4px 9px 0px #0000004f;
+
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+
+  transition-duration: 0.3s;
+
+  cursor: pointer;
+}
+
+/* -------------------------------------------------------------- */
+
 /* -------------------------------Index Accueil------------------------------- */
 .container_index {
   display: flex;
@@ -595,22 +621,6 @@ nav {
   cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* -----Animation Gite----- */
 @keyframes containerGite {
   0%{
@@ -629,4 +639,178 @@ nav {
 }
 /* -------------------------------------------------------------- */
 
-/* -------------------------------      ------------------------------- */
+/* -------------------------------Dashboard------------------------------- */
+
+.container_dash{
+  padding: 100px;
+}
+
+.container_dash h1{
+  margin-bottom: 10px;
+
+  text-align: center;
+
+  font-size: 65px;
+  font-weight: 500;
+  font-family: 'Dancing Script', cursive;
+}
+
+.desc_dash{
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  margin-top: 25px;
+
+  top: 0px;
+
+  transition: all 1.5s ease;
+  
+  animation: 1.5s ease containerGite;
+
+}
+
+.img_dash{
+  width: 50%;
+  margin-left: auto;
+}
+
+.img_dash img{
+  display: block;
+
+  width: 80%;
+  margin: auto;
+
+  border: solid 1px #5757573b;
+  box-shadow: 0px 4px 9px 0px #0000002e;
+
+  cursor: zoom-in;
+
+  transition-duration: 0.2s;
+}
+
+.desc_text_dash{
+  width: 50%;
+
+  padding: 15px;
+
+  border-left: solid 2px #575757;;
+}
+
+#desc_titre_dash{
+  margin-bottom: 10px;
+}
+
+#desc_p_dash{
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+#sp_dash{
+  margin-top: 10px;
+  margin-left: 10px;
+  
+  color: #0000007a;
+}
+
+#couchage_titre_dash{
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+#svg_icon_dash{
+  width: 30px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.equipements_dash{
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 20px;
+}
+
+#equipement_titre_dash{
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+#wifi_dash, #tv_dash, #cuisine_dash, #animaux_dash, #linge_dash, #couchage_dash{
+  display: flex;
+  
+  margin-left: 10px;
+}
+
+#couchage_dash{
+  margin-bottom: 10px;
+}
+
+.equipements_dash p, #couchage_dash p{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 15px;
+}
+
+.two_btn{
+  display: flex;
+  flex-direction: row;
+}
+
+#edit{
+  display: block;
+
+  width: 220px;
+  height: 60px;
+
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 25px;
+
+  background-color: #f0ad4e;
+  border: solid 1px #eea236;;
+  box-shadow: 0px 4px 9px 0px #0000004f;
+
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+
+  transition-duration: 0.2s;
+
+  cursor: pointer;
+}
+
+#delete{
+  display: block;
+
+  width: 220px;
+  height: 60px;
+
+  margin-top: 30px;
+  margin-left: 10px;
+
+  background-color: #d9534f;
+  border: solid 1px #d43f3a;
+  box-shadow: 0px 4px 9px 0px #0000004f;
+
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+
+  transition-duration: 0.2s;
+
+  cursor: pointer;
+}
+
+/* -----Animation dashboard----- */
+
+#edit:hover{
+  background-color: #ec971f;
+  border-color: #d58512; 
+}
+
+#delete:hover{
+  background-color: #c9302c;
+  border-color: #ac2925;
+} 
