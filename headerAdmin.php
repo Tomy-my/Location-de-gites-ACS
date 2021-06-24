@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="css/breakpointAdmin.css" />
         <link rel="icon" href="img/favicon.svg" />
         <script src="https://kit.fontawesome.com/508ebce8fc.js"></script>
-		<title>Natura : <?php echo $titre; ?></title>
+		<title>Natura : <?php echo $title; ?></title>
 	</head>
     <body>
 		<nav>
@@ -19,7 +19,7 @@
             <div id="gites" ><a href="gîtes.php">Nos Gîtes</a></div>
             <div id="aPropos" ><a href="à-propos.php">À Propos</a></div>
             <div id="contact" ><a href="contact.php">Contact</a></div>
-            <button id="dash_btn"><i class="fas fa-clipboard-list"></i>&ensp; Dashboard Gîtes</button>
-            <button id="add_btn"><i class="fas fa-plus"></i>&ensp; Ajouter un Gîte</button>
-            <button id="deco_btn"><i class="fas fa-sign-out-alt"></i>&ensp; Déconnexion</button>
+            <button id="dash_btn"onclick="document.location.href='dashboard.php'"><i class="fas fa-clipboard-list"></i>&ensp; Dashboard Gîtes</button>
+            <button id="add_btn"onclick="document.location.href='add-gite.php'"><i class="fas fa-plus"></i>&ensp; Ajouter un Gîte</button>
+            <button id="deco_btn" onclick="document.location.href='controller/logout.php'"><i class="fas fa-sign-out-alt"></i>&ensp; Déconnexion</button>
         </nav>

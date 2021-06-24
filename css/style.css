@@ -637,6 +637,7 @@ nav {
 #rsv_offre:hover {
   background-color: rgb(207, 176, 114);
 }
+
 /* -------------------------------------------------------------- */
 
 /* -------------------------------Dashboard------------------------------- */
@@ -814,3 +815,112 @@ nav {
   background-color: #c9302c;
   border-color: #ac2925;
 } 
+
+/* -------------------------------------------------------------- */
+
+/* -------------------------------Formulaire d'ajout des Gîtes------------------------------- */
+
+.container_add{
+  padding: 100px;
+}
+
+.container_add h1{
+  margin-bottom: 40px;
+
+  text-align: center;
+
+  font-size: 65px;
+  font-weight: 500;
+  font-family: 'Dancing Script', cursive;
+}
+
+.container_add form{
+  display: flex;
+  flex-direction: column;
+
+  width: 800px;
+  margin: auto;
+  padding: 25px;
+
+  background-color: white;
+}
+
+.container_add form{
+  margin-bottom: 15px;
+
+  border: solid 2px #0006;
+
+  font-size: 20px;
+}
+
+.container_add input{
+  width: 265px;
+  height: 40px;
+
+  margin-top: 10px;
+  margin-bottom: 35px;
+  margin-right: auto;
+
+  padding-left: 15px;
+  
+  outline: none;
+  border: solid 2px #9d9d9d;
+  background-color: rgba(255, 255, 255, 0);
+
+  font-size: 18px;
+  color: rgb(134, 134, 134);
+  font-family: 'Roboto', sans-serif;
+}
+
+.container_add input::placeholder{
+  font-size: 16px;
+}
+
+.container_add input[type="file"]{
+  margin-bottom: 15px;
+  padding-top: 4px;
+}
+
+#txt_img{
+  font-size: 17px;
+}
+
+#select_pets{
+  width: 265px;
+  height: 40px;
+
+  margin-top: 10px;
+  margin-bottom: 35px;
+
+  border: solid 2px #9d9d9d;
+  background-color: rgba(87, 87, 87, 0);
+
+  color: #575757;
+  font-size: 18px;
+}
+
+#none_select{
+  cursor: none;
+}
+
+#descriptionFormule{
+  width: 100%;
+  height: 240px;
+
+  margin-top: 10px;
+  margin-bottom: 30px;
+
+  padding-left: 15px;
+  padding-top: 15px;
+
+  outline: none;
+  resize : none;
+
+  border: solid 2px #9d9d9d;
+
+  background-color: rgba(255, 255, 255, 0);
+
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(134, 134, 134);
+}
