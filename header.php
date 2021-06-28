@@ -46,6 +46,18 @@
                 <hr id="input_hr">
                 <button id="connexion" type="submit" name="submit">Connexion</button>
             </form>
-            <button id="exit"><i class="fas fa-times"></i></button>
             <?php if(isset($erreur)){echo $erreur;}?>
+            <div class="burger_menu">
+                <hr id="burger_slide1">
+                <hr id="burger_slide2">
+                <hr id="burger_slide3">
+            </div>
+            <div class="burger_cl">
+                <div id="index_burger" ><a href="index.php"        <?php if ($lien_actif == 'accueil') {echo ' style="color:#C8A45D;"';} ?>    >Accueil</a></div>
+                <div id="gites_burger" ><a href="gîtes.php"        <?php if ($lien_actif == 'gite') {echo ' style="color:#C8A45D;"';} ?>    >Nos Gîtes</a></div>
+                <div id="aPropos_burger" ><a href="à-propos.php"   <?php if ($lien_actif == 'propos') {echo ' style="color:#C8A45D;"';} ?> >À Propos</a></div>
+                <div id="contact_burger" ><a href="contact.php"    <?php if ($lien_actif == 'contact') {echo ' style="color:#C8A45D;"';} ?>  >Contact</a></div>
+            </div>
+            <button id="exit"><i class="fas fa-times"></i></button>        
+            <button id="exit_burger"><i class="fas fa-times"></i></button>        
         </nav>

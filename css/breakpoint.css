@@ -30,3 +30,71 @@
         width: 32%;
     }
 }
+
+
+/* -------------------------------------------------------------- */
+/* -------------------------------------------------------------- */
+/* -------------------------------------------------------------- */
+
+/* -------------------------------   Mobile   ------------------------------- */
+/* iphone 12 Pro Max */
+@media only screen and (min-width : 428px) and (max-height : 926px) and (-webkit-device-pixel-ratio : 3) { 
+    #index, #gites, #aPropos, #contact, #rsv{
+        display: none;
+    }
+
+    .burger_menu{
+        display: flex;
+    }
+
+    .container_index h1{
+        font-size: 34px;
+    }
+
+    .gi_1,
+    .gi_3{
+        display: none;
+    }
+
+    .gi_2{
+        width: 100%;
+    }
+    
+    .container_gite{
+        margin-top: 30px;
+
+        padding: 35px;
+    }
+
+    .desc_gite{
+        flex-direction: column;
+
+        margin-top: 0px;
+    }
+
+    .img_gite{
+        width: 100%;
+        margin-right: auto;
+    }
+
+    .img_gite img{
+        width: 100%;
+    }
+
+    .desc_text_gite{
+        width: 100%;
+
+        margin-top: 35px;
+    }
+
+    .more_img{
+        flex-direction: column;
+    }
+
+    .more_img img{
+        width: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

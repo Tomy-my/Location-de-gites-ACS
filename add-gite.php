@@ -8,7 +8,7 @@ if (empty($_SESSION['admin']))
 }
 else
 {
-    $titre = 'Dashboard';
+    $title = 'Dashboard';
     
     include("controller/crud.php");
 
@@ -53,7 +53,7 @@ else
             <p>Description du Gîte :</p>
             <textarea id="descriptionFormule" type="textarea" name="description" placeholder="Description de la formule" required></textarea>
 
-            <button name='ajouter' type="submit">Ajouter</button>
+            <button id="btn_add" name='ajouter' type="submit"><i class="fas fa-folder-plus"></i>&ensp; Ajouter</button>
     </form>
 
     </div>

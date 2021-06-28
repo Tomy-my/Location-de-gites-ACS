@@ -188,7 +188,7 @@ else
     include('headerAdmin.php');
 ?>
     <div class="container_add">
-        <h1>Formulaire d'ajout de Gîtes :</h1>
+        <h1>Formulaire d'édition des Gîtes :</h1>
         <form method="post" action="" enctype="multipart/form-data" >
             <p>Titre de la formule :</p>
             <input type="text" name="titre" value="<?php echo $titre; ?>"/>
@@ -228,7 +228,8 @@ else
 
             <p>Description du Gîte :</p>
             <textarea id="descriptionFormule" type="textarea" name="description"><?php echo $description; ?></textarea>
-            <button name='btn_update' value="Update">Ajouter</button>
+            <button id="btn_add" name='btn_update' type="submit"><i class="far fa-edit"></i>&ensp; Modifier</button>
+
             <?php
             		if(isset($errorMsg))
                     {

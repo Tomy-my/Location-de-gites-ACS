@@ -52,14 +52,14 @@ nav {
   height: 100px;
 
   margin-right: 100px;
-  
+
   cursor: pointer;
 }
 
 #index,
 #gites,
 #aPropos,
-#contact {
+#contact{
   margin-top: auto;
   margin-bottom: auto;
   margin-right: 70px;
@@ -92,7 +92,7 @@ nav {
   cursor: pointer;
 }
 
-#exit{
+#exit {
   display: none;
 
   height: 44px;
@@ -103,9 +103,11 @@ nav {
   border: none;
 
   font-size: 40px;
-  color: #C8A45D;
+  color: #c8a45d;
 
   cursor: pointer;
+
+  transition: all 1s ease;
 }
 
 /* -----Animation Navigation----- */
@@ -119,9 +121,84 @@ nav {
 #rsv:hover {
   background-color: rgb(207, 176, 114);
 }
-#exit:hover{
+#exit:hover {
   color: rgb(207, 176, 114);
 }
+
+/* -------------------------------------------------------------- */
+
+/* -------------------------------Navigation MOBILE------------------------------- */
+
+.burger_menu{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 70px;
+  height: 70px;
+
+  margin: auto;
+  margin-right: 0px;
+}
+
+#burger_slide1, 
+#burger_slide2,
+#burger_slide3{
+  width: 63px;
+  height: 8px;
+  
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: auto;
+
+  background-color: #606060;
+
+  border: none;
+
+  transition: ease 1s;
+
+  transform: scale(0.7);
+}
+
+.burger_cl{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-left: -200px;
+
+
+  transition: all 1s ease;
+}
+
+#index_burger,
+#gites_burger,
+#aPropos_burger,
+#contact_burger{
+
+  margin-bottom: 70px;
+
+  font-size: 25px;
+}
+
+#exit_burger {
+  display: none;
+
+  height: 44px;
+
+  margin-top: 15px;
+
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+
+  font-size: 40px;
+  color: #c8a45d;
+
+  cursor: pointer;
+
+  transition: all 1s ease;
+}
+
 /* -------------------------------------------------------------- */
 
 /* -------------------------------Formulaire search nav------------------------------- */
@@ -166,7 +243,7 @@ nav {
 
   font-size: 19px;
   font-weight: normal;
-  
+
   color: #c8a45d;
 }
 
@@ -222,7 +299,7 @@ nav {
   cursor: pointer;
 }
 
-#search:hover{
+#search:hover {
   background-color: rgb(207, 176, 114);
 }
 
@@ -270,7 +347,7 @@ nav {
 
   font-size: 19px;
   font-weight: normal;
-  
+
   color: #c8a45d;
 }
 
@@ -319,18 +396,18 @@ nav {
   cursor: pointer;
 }
 
-#connexion:hover{
+#connexion:hover {
   background-color: rgb(207, 176, 114);
 }
 
 /* -------------------------------------------------------------- */
 
 /* -------------------------------Header/Admin------------------------------- */
-#dash_btn, 
-#add_btn, 
+#dash_btn,
+#add_btn,
 #deco_btn {
-  width: 220px;
-  height: 60px;
+  width: 210px;
+  height: 50px;
 
   margin-top: auto;
   margin-bottom: auto;
@@ -341,7 +418,7 @@ nav {
   box-shadow: 0px 4px 9px 0px #0000004f;
 
   color: #ffffff;
-  font-size: 20px;
+  font-size: 19px;
   font-family: "Roboto", sans-serif;
 
   transition-duration: 0.3s;
@@ -363,7 +440,7 @@ nav {
   text-align: center;
 }
 
-.container_index h1{
+.container_index h1 {
   margin-top: 70px;
 
   font-weight: lighter;
@@ -372,11 +449,11 @@ nav {
   animation: 2.8s ease accueil;
 }
 
-.container_index span{
-  color: #C8A45D;
+.container_index span {
+  color: #c8a45d;
 }
 
-.galerie_img{
+.galerie_img {
   display: flex;
   justify-content: space-around;
   margin-top: auto;
@@ -384,39 +461,39 @@ nav {
   height: 300px;
 }
 
-.gi_1{
+.gi_1 {
   width: 50%;
 
-  background-image: url('../img/1.png');
+  background-image: url("../img/1.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  
+
   box-shadow: 0px 6px 9px 7px #000000a8;
 }
 
-.gi_2{
+.gi_2 {
   position: relative;
 
   width: 70%;
   margin-top: -175px;
 
-  background-image: url('../img/2.png');
+  background-image: url("../img/2.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 
   box-shadow: 0px 6px 9px 7px #000000a8;
-  
+
   z-index: 10;
 
   animation: 1.8s ease imgCentre;
 }
 
-.gi_3{
+.gi_3 {
   width: 50%;
 
-  background-image: url('../img/1.png');
+  background-image: url("../img/1.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -427,19 +504,19 @@ nav {
 /* -----Animation Accueil----- */
 
 @keyframes imgCentre {
-  0%{
+  0% {
     top: 500px;
   }
-  100%{
+  100% {
     top: 0px;
   }
 }
 
 @keyframes accueil {
-  0%{
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
@@ -448,21 +525,21 @@ nav {
 
 /* ------------------------------- Gite------------------------------- */
 
-.container_gite{
+.container_gite {
   padding: 100px;
 }
 
-.container_gite h1{
+.container_gite h1 {
   margin-bottom: 10px;
 
   text-align: center;
 
   font-size: 65px;
   font-weight: 500;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
 
-.desc_gite{
+.desc_gite {
   position: relative;
 
   display: flex;
@@ -473,17 +550,16 @@ nav {
   top: 0px;
 
   transition: all 1.5s ease;
-  
-  animation: 1.5s ease containerGite;
 
+  animation: 1.5s ease containerGite;
 }
 
-.img_gite{
+.img_gite {
   width: 50%;
   margin-left: auto;
 }
 
-.img_gite img{
+.img_gite img {
   display: block;
 
   width: 80%;
@@ -497,13 +573,13 @@ nav {
   transition-duration: 0.2s;
 }
 
-.more_img{
+.more_img {
   display: none;
 
   width: 100%;
 }
 
-.more_img img{
+.more_img img {
   display: block;
 
   width: 80%;
@@ -511,10 +587,9 @@ nav {
 
   border: solid 1px #5757573b;
   box-shadow: 0px 4px 9px 0px #0000002e;
-
 }
 
-#back_zoom{
+#back_zoom {
   display: none;
 
   width: 220px;
@@ -536,70 +611,76 @@ nav {
   cursor: pointer;
 }
 
-.desc_text_gite{
+.desc_text_gite {
   width: 50%;
 
   padding: 15px;
 
-  border-left: solid 2px #575757;;
+  border-left: solid 2px #575757;
 }
 
-#desc_titre{
+#desc_titre {
   margin-bottom: 10px;
 }
 
-#desc_p{
+#desc_p {
   margin-top: 15px;
   margin-left: 10px;
 }
 
-#sp{
+#sp {
   margin-top: 10px;
   margin-left: 10px;
-  
+
   color: #0000007a;
 }
 
-#couchage_titre{
+#couchage_titre {
   margin-top: 25px;
   margin-bottom: 5px;
 }
 
-#svg_icon{
+#svg_icon {
   width: 30px;
   margin-bottom: 10px;
   margin-top: 15px;
 }
 
-.equipements{
+.equipements {
   display: flex;
   flex-direction: column;
 
   margin-bottom: 20px;
 }
 
-#equipement_titre{
+#equipement_titre {
   margin-top: 25px;
   margin-bottom: 5px;
 }
 
-#wifi, #tv, #cuisine, #animaux, #linge, #couchage{
+#wifi,
+#tv,
+#cuisine,
+#animaux,
+#linge,
+#couchage {
   display: flex;
-  
+
   margin-left: 10px;
 }
 
-#couchage{
+#couchage {
   margin-bottom: 10px;
 }
 
-.equipements p, #couchage p{
+.equipements p,
+#couchage p {
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 15px;
 }
 
-#rsv_offre{
+#rsv_offre {
   display: block;
 
   width: 220px;
@@ -623,18 +704,18 @@ nav {
 
 /* -----Animation Gite----- */
 @keyframes containerGite {
-  0%{
+  0% {
     top: 1000px;
   }
-  100%{
+  100% {
     top: 0px;
   }
 }
-.img_gite img:hover{
+.img_gite img:hover {
   width: 81%;
 }
 
-#rsv_offre:hover {
+#rsv_offre:hover, #btn_add:hover, #dash_btn:hover, #add_btn:hover, #deco_btn:hover {
   background-color: rgb(207, 176, 114);
 }
 
@@ -642,21 +723,21 @@ nav {
 
 /* -------------------------------Dashboard------------------------------- */
 
-.container_dash{
+.container_dash {
   padding: 100px;
 }
 
-.container_dash h1{
+.container_dash h1 {
   margin-bottom: 10px;
 
   text-align: center;
 
   font-size: 65px;
   font-weight: 500;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
 
-.desc_dash{
+.desc_dash {
   position: relative;
 
   display: flex;
@@ -667,17 +748,16 @@ nav {
   top: 0px;
 
   transition: all 1.5s ease;
-  
-  animation: 1.5s ease containerGite;
 
+  animation: 1.5s ease containerGite;
 }
 
-.img_dash{
+.img_dash {
   width: 50%;
   margin-left: auto;
 }
 
-.img_dash img{
+.img_dash img {
   display: block;
 
   width: 80%;
@@ -691,75 +771,81 @@ nav {
   transition-duration: 0.2s;
 }
 
-.desc_text_dash{
+.desc_text_dash {
   width: 50%;
 
   padding: 15px;
 
-  border-left: solid 2px #575757;;
+  border-left: solid 2px #575757;
 }
 
-#desc_titre_dash{
+#desc_titre_dash {
   margin-bottom: 10px;
 }
 
-#desc_p_dash{
+#desc_p_dash {
   margin-top: 15px;
   margin-left: 10px;
 }
 
-#sp_dash{
+#sp_dash {
   margin-top: 10px;
   margin-left: 10px;
-  
+
   color: #0000007a;
 }
 
-#couchage_titre_dash{
+#couchage_titre_dash {
   margin-top: 25px;
   margin-bottom: 5px;
 }
 
-#svg_icon_dash{
+#svg_icon_dash {
   width: 30px;
   margin-bottom: 10px;
   margin-top: 15px;
 }
 
-.equipements_dash{
+.equipements_dash {
   display: flex;
   flex-direction: column;
 
   margin-bottom: 20px;
 }
 
-#equipement_titre_dash{
+#equipement_titre_dash {
   margin-top: 25px;
   margin-bottom: 5px;
 }
 
-#wifi_dash, #tv_dash, #cuisine_dash, #animaux_dash, #linge_dash, #couchage_dash{
+#wifi_dash,
+#tv_dash,
+#cuisine_dash,
+#animaux_dash,
+#linge_dash,
+#couchage_dash {
   display: flex;
-  
+
   margin-left: 10px;
 }
 
-#couchage_dash{
+#couchage_dash {
   margin-bottom: 10px;
 }
 
-.equipements_dash p, #couchage_dash p{
+.equipements_dash p,
+#couchage_dash p {
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 15px;
 }
 
-.two_btn{
+.two_btn {
   display: flex;
   flex-direction: row;
 }
 
-#edit{
+#edit {
   display: block;
 
   width: 220px;
@@ -770,7 +856,7 @@ nav {
   margin-right: 25px;
 
   background-color: #f0ad4e;
-  border: solid 1px #eea236;;
+  border: solid 1px #eea236;
   box-shadow: 0px 4px 9px 0px #0000004f;
 
   color: #ffffff;
@@ -782,7 +868,7 @@ nav {
   cursor: pointer;
 }
 
-#delete{
+#delete {
   display: block;
 
   width: 220px;
@@ -806,35 +892,35 @@ nav {
 
 /* -----Animation dashboard----- */
 
-#edit:hover{
+#edit:hover {
   background-color: #ec971f;
-  border-color: #d58512; 
+  border-color: #d58512;
 }
 
-#delete:hover{
+#delete:hover {
   background-color: #c9302c;
   border-color: #ac2925;
-} 
+}
 
 /* -------------------------------------------------------------- */
 
 /* -------------------------------Formulaire d'ajout des Gîtes------------------------------- */
 
-.container_add{
+.container_add {
   padding: 100px;
 }
 
-.container_add h1{
+.container_add h1 {
   margin-bottom: 40px;
 
   text-align: center;
 
   font-size: 65px;
   font-weight: 500;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
 
-.container_add form{
+.container_add form {
   display: flex;
   flex-direction: column;
 
@@ -845,7 +931,7 @@ nav {
   background-color: white;
 }
 
-.container_add form{
+.container_add form {
   margin-bottom: 15px;
 
   border: solid 2px #0006;
@@ -853,7 +939,7 @@ nav {
   font-size: 20px;
 }
 
-.container_add input{
+.container_add input {
   width: 265px;
   height: 40px;
 
@@ -862,30 +948,30 @@ nav {
   margin-right: auto;
 
   padding-left: 15px;
-  
+
   outline: none;
   border: solid 2px #9d9d9d;
   background-color: rgba(255, 255, 255, 0);
 
   font-size: 18px;
   color: rgb(134, 134, 134);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-.container_add input::placeholder{
+.container_add input::placeholder {
   font-size: 16px;
 }
 
-.container_add input[type="file"]{
+.container_add input[type="file"] {
   margin-bottom: 15px;
   padding-top: 4px;
 }
 
-#txt_img{
+#txt_img {
   font-size: 17px;
 }
 
-#select_pets{
+#select_pets {
   width: 265px;
   height: 40px;
 
@@ -899,11 +985,11 @@ nav {
   font-size: 18px;
 }
 
-#none_select{
+#none_select {
   cursor: none;
 }
 
-#descriptionFormule{
+#descriptionFormule {
   width: 100%;
   height: 240px;
 
@@ -914,13 +1000,35 @@ nav {
   padding-top: 15px;
 
   outline: none;
-  resize : none;
+  resize: none;
 
   border: solid 2px #9d9d9d;
 
   background-color: rgba(255, 255, 255, 0);
 
   font-size: 18px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: rgb(134, 134, 134);
+}
+
+#btn_add {
+  display: block;
+
+  width: 220px;
+  height: 60px;
+
+  margin: auto;
+
+  background-color: #c4a464;
+  border: solid 1px #977f4f;
+  box-shadow: 0px 4px 9px 0px #0000004f;
+
+  color: #ffffff;
+
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+
+  transition-duration: 0.3s;
+
+  cursor: pointer;
 }
