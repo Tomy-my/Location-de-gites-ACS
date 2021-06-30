@@ -12,17 +12,17 @@ function affichagePersonnes($res)
 ?>
     <div class="container_gite">
         <h1><?php echo $data['titre'] ?> <br />''</h1>
-        <div class="desc_gite">
-            <div class="img_gite">
-                <img src="upload/<?php echo $data['image_file'] ?>" alt="#" />
+        <div class="desc_gite" id="desc_gite-<?= $data['id']?>">
+            <div class="img_gite" id="img_gite-<?= $data['id']?>">
+                <img onclick="moreImg(<?= $data['id']?>)" src="upload/<?php echo $data['image_file'] ?>" alt="#" />
             </div>
-            <div class="more_img">
+            <div class="more_img" id="more_img-<?= $data['id']?>">
                     <img src="upload/<?php echo $data['image_file'] ?>" alt="#" />
                     <img src="upload/<?php echo $data['image_file2'] ?>" alt="#" />
                     <img src="upload/<?php echo $data['image_file3'] ?>" alt="#" />
             </div>
-            <button id="back_zoom"><i class="fas fa-arrow-left"></i>&ensp; Retour en arrière</button>
-            <div class="desc_text_gite">
+            <button class="back_zoom" id="back_zoom-<?= $data['id']?>"><i class="fas fa-arrow-left"></i>&ensp; Retour en arrière</button>
+            <div class="desc_text_gite" id="desc_text_gite-<?= $data['id']?>">
                 <h3 id="desc_titre">Description du Gîte :</h3>
                 <p id="desc_p"><?php echo $data['description'] ?></p>
                 <br />
@@ -57,7 +57,7 @@ function affichagePersonnes($res)
                     </div>
                 </div>
                 <hr id="sp">
-                <button id="rsv_offre"><i class="far fa-calendar-alt"></i>&ensp; Je veux réserver</button>
+                <button id="rsv_offre" onclick="document.location.href='reservation.php'"><i class="far fa-calendar-alt"></i>&ensp; Je veux réserver</button>
             </div>
         </div>
     </div>

@@ -98,3 +98,531 @@
         margin-right: auto;
     }
 }
+
+/* iphone 11 Pro Max */
+@media only screen and (min-width : 414px) and (max-height : 896px) and (-webkit-device-pixel-ratio : 3) { 
+    #index, #gites, #aPropos, #contact, #rsv{
+        display: none;
+    }
+
+    .burger_menu{
+        display: flex;
+    }
+
+    .container_index h1{
+        font-size: 34px;
+    }
+
+    .galerie_img{
+        height: 250px;
+    }
+
+    .gi_1,
+    .gi_3{
+        display: none;
+    }
+
+    .gi_2{
+        width: 100%;
+    }
+    
+    .container_gite{
+        margin-top: 30px;
+
+        padding: 35px;
+    }
+
+    .desc_gite{
+        flex-direction: column;
+
+        margin-top: 0px;
+    }
+
+    .img_gite{
+        width: 100%;
+        margin-right: auto;
+    }
+
+    .img_gite img{
+        width: 100%;
+    }
+
+    .desc_text_gite{
+        width: 100%;
+
+        margin-top: 35px;
+    }
+
+    .more_img{
+        flex-direction: column;
+    }
+
+    .more_img img{
+        width: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* iphone 11 */
+@media only screen and (min-width : 414px) and (max-height : 896px) and (-webkit-device-pixel-ratio : 2) { 
+    #index, #gites, #aPropos, #contact, #rsv{
+        display: none;
+    }
+
+    .burger_menu{
+        display: flex;
+    }
+
+    .container_index h1{
+        font-size: 34px;
+    }
+
+    .galerie_img{
+        height: 250px;
+    }
+
+    .gi_1,
+    .gi_3{
+        display: none;
+    }
+
+    .gi_2{
+        width: 100%;
+    }
+    
+    .container_gite{
+        margin-top: 30px;
+
+        padding: 35px;
+    }
+
+    .desc_gite{
+        flex-direction: column;
+
+        margin-top: 0px;
+    }
+
+    .img_gite{
+        width: 100%;
+        margin-right: auto;
+    }
+
+    .img_gite img{
+        width: 100%;
+    }
+
+    .desc_text_gite{
+        width: 100%;
+
+        margin-top: 35px;
+    }
+
+    .more_img{
+        flex-direction: column;
+    }
+
+    .more_img img{
+        width: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* iphone 12 Pro*/
+@media only screen and (min-width : 390px) and (max-height : 844px) and (-webkit-device-pixel-ratio : 3) { 
+    #index, #gites, #aPropos, #contact, #rsv{
+        display: none;
+    }
+
+    .burger_menu{
+        display: flex;
+    }
+
+    .container_index h1{
+        font-size: 34px;
+    }
+
+    .galerie_img{
+        height: 250px;
+    }
+
+    .gi_1,
+    .gi_3{
+        display: none;
+    }
+
+    .gi_2{
+        width: 100%;
+    }
+    
+    .container_gite{
+        margin-top: 30px;
+
+        padding: 35px;
+    }
+
+    .desc_gite{
+        flex-direction: column;
+
+        margin-top: 0px;
+    }
+
+    .img_gite{
+        width: 100%;
+        margin-right: auto;
+    }
+
+    .img_gite img{
+        width: 100%;
+    }
+
+    .desc_text_gite{
+        width: 100%;
+
+        margin-top: 35px;
+    }
+
+    .more_img{
+        flex-direction: column;
+    }
+
+    .more_img img{
+        width: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* iphone X */
+@media only screen and (min-width : 375px) and (max-height : 812px) and (-webkit-device-pixel-ratio : 3) { 
+    #index, #gites, #aPropos, #contact, #rsv{
+        display: none;
+    }
+
+    .burger_menu{
+        display: flex;
+    }
+
+    .container_index h1{
+        font-size: 34px;
+    }
+
+    .galerie_img{
+        height: 200px;
+    }
+
+    .gi_1,
+    .gi_3{
+        display: none;
+    }
+
+    .gi_2{
+        width: 100%;
+    }
+    
+    .container_gite{
+        margin-top: 30px;
+
+        padding: 35px;
+    }
+
+    .desc_gite{
+        flex-direction: column;
+
+        margin-top: 0px;
+    }
+
+    .img_gite{
+        width: 100%;
+        margin-right: auto;
+    }
+
+    .img_gite img{
+        width: 100%;
+    }
+
+    .desc_text_gite{
+        width: 100%;
+
+        margin-top: 35px;
+    }
+
+    .more_img{
+        flex-direction: column;
+    }
+
+    .more_img img{
+        width: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* iphone 6+, 6s+, 7+, 8+ */
+@media only screen and (min-width : 414px) and (max-height : 736px) and (-webkit-device-pixel-ratio : 3) { 
+    #index, #gites, #aPropos, #contact, #rsv{
+        display: none;
+    }
+
+    .burger_menu{
+        display: flex;
+    }
+
+    .container_index h1{
+        font-size: 34px;
+    }
+
+    .galerie_img{
+        height: 100px;
+    }
+
+    .gi_1,
+    .gi_3{
+        display: none;
+    }
+
+    .gi_2{
+        width: 100%;
+    }
+    
+    .container_gite{
+        margin-top: 30px;
+
+        padding: 35px;
+    }
+
+    .desc_gite{
+        flex-direction: column;
+
+        margin-top: 0px;
+    }
+
+    .img_gite{
+        width: 100%;
+        margin-right: auto;
+    }
+
+    .img_gite img{
+        width: 100%;
+    }
+
+    .desc_text_gite{
+        width: 100%;
+
+        margin-top: 35px;
+    }
+
+    .more_img{
+        flex-direction: column;
+    }
+
+    .more_img img{
+        width: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* iphone 6, 6s, 7, 8 */
+@media only screen and (min-width : 375px) and (max-height : 667px) and (-webkit-device-pixel-ratio : 2) { 
+    #index, #gites, #aPropos, #contact, #rsv{
+        display: none;
+    }
+
+    .burger_menu{
+        display: flex;
+    }
+
+    .container_index h1{
+        font-size: 34px;
+    }
+
+    .galerie_img{
+        height: 100px;
+    }
+
+    .gi_1,
+    .gi_3{
+        display: none;
+    }
+
+    .gi_2{
+        width: 100%;
+    }
+    
+    .container_gite{
+        margin-top: 30px;
+
+        padding: 35px;
+    }
+
+    .desc_gite{
+        flex-direction: column;
+
+        margin-top: 0px;
+    }
+
+    .img_gite{
+        width: 100%;
+        margin-right: auto;
+    }
+
+    .img_gite img{
+        width: 100%;
+    }
+
+    .desc_text_gite{
+        width: 100%;
+
+        margin-top: 35px;
+    }
+
+    .more_img{
+        flex-direction: column;
+    }
+
+    .more_img img{
+        width: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (min-width : 375px) and (max-height : 812px) and (-webkit-device-pixel-ratio : 2) { 
+    #index, #gites, #aPropos, #contact, #rsv{
+        display: none;
+    }
+
+    .burger_menu{
+        display: flex;
+    }
+
+    .container_index h1{
+        font-size: 34px;
+    }
+
+    .galerie_img{
+        height: 100px;
+    }
+
+    .gi_1,
+    .gi_3{
+        display: none;
+    }
+
+    .gi_2{
+        width: 100%;
+    }
+    
+    .container_gite{
+        margin-top: 30px;
+
+        padding: 35px;
+    }
+
+    .desc_gite{
+        flex-direction: column;
+
+        margin-top: 0px;
+    }
+
+    .img_gite{
+        width: 100%;
+        margin-right: auto;
+    }
+
+    .img_gite img{
+        width: 100%;
+    }
+
+    .desc_text_gite{
+        width: 100%;
+
+        margin-top: 35px;
+    }
+
+    .more_img{
+        flex-direction: column;
+    }
+
+    .more_img img{
+        width: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*OnePlus */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait){ 
+    #index, #gites, #aPropos, #contact, #rsv{
+        display: none;
+    }
+
+    .burger_menu{
+        display: flex;
+    }
+
+    .container_index h1{
+        font-size: 34px;
+    }
+
+    .galerie_img{
+        height: 100px;
+    }
+
+    .gi_1,
+    .gi_3{
+        display: none;
+    }
+
+    .gi_2{
+        width: 100%;
+    }
+    
+    .container_gite{
+        margin-top: 30px;
+
+        padding: 35px;
+    }
+
+    .desc_gite{
+        flex-direction: column;
+
+        margin-top: 0px;
+    }
+
+    .img_gite{
+        width: 100%;
+        margin-right: auto;
+    }
+
+    .img_gite img{
+        width: 100%;
+    }
+
+    .desc_text_gite{
+        width: 100%;
+
+        margin-top: 35px;
+    }
+
+    .more_img{
+        flex-direction: column;
+    }
+
+    .more_img img{
+        width: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+

@@ -242,3 +242,53 @@ class crud extends configBdd {
             $query->execute();
         }
 }
+
+class demandeRsv extends configBdd {
+
+    public $name ;
+    public $email ;
+    public $formule ;
+    public $periode ;
+    public $ask ;
+
+
+
+    public function __construct($hostname, $username, $password, $basename, $name, $email, $formule, $periode, $ask){   //, $img1, $img1Type, $img1Size, $img1Temp, $img2, $img2Type, $img2Size, $img2Temp, $img3, $img3Type, $img3Size, $img3Temp
+        parent::__construct($hostname, $username, $password, $basename);
+
+        $this->name = $name;
+        $this->email = $email;
+        $this->formule = $formule;
+        $this->periode = $periode;
+        $this->ask = $ask;
+
+    }
+
+    public static function addGite($name, $email, $formule, $periode, $ask){
+
+        if(empty($name)){
+            $errorMsg="Veuillez indiquer votre Nom et Prenom";
+        }
+
+        else if(empty($email)){
+            $errorMsg="Veuillez indiquer une adresse Mail valide";
+        }
+
+        else if(empty($formule)){
+            $errorMsg="Veuillez indiquer le nom de la formule";
+        }
+
+        else if(empty($periode)){
+            $errorMsg="Veuillez indiquer la période de votre séjour";
+        }
+
+        if(!isset($errorMsg))
+        {
+            $db = new configBdd ("localhost", "root", "", "gite");
+            $query = $db->bddPDO->prepare("INSERT INTO demande VALUES (DEFAULT, '".$name."', '".$email."', '".$formule."', '".$periode."', '".$ask."')");
+            $query->execute();
+        
+        }
+
+    }
+}

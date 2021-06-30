@@ -163,29 +163,30 @@ exit.addEventListener("click", function() {
 
 
 //Zoom img gîte
-let zoomImg = document.querySelector(".img_gite img");
 
-let moreImg = document.querySelector(".more_img");
+function moreImg(id){
 
-let containerImg = document.querySelector(".img_gite")
-let containerDesc = document.querySelector(".desc_gite");
-let containerDescText = document.querySelector(".desc_text_gite");
+    console.log(id);
 
-let backZoom = document.querySelector("#back_zoom");
-
-zoomImg.addEventListener("click", function(){
+    let moreImg = document.querySelector("#more_img-"+id);
+    
+    let containerImg = document.querySelector("#img_gite-"+id)
+    let containerDesc = document.querySelector("#desc_gite-"+id);
+    let containerDescText = document.querySelector("#desc_text_gite-"+id);
+    
+    let backZoom = document.querySelector("#back_zoom-"+id);
 
     containerDesc.style.top = "1000px";
     
     setTimeout(function() {
-        moreImg.style.display = "flex";
-
         containerImg.style.display = "none";
         
         containerDescText.style.display = "none";
         
         containerDesc.style.display = "block";
         containerDesc.style.marginTop = "0px";
+
+        moreImg.style.display = "flex";
     
     
         backZoom.style.display = "block";
@@ -195,30 +196,32 @@ zoomImg.addEventListener("click", function(){
             containerDesc.style.top = "0px";
 
             }, 1100);
-})
+    
+    backZoom.addEventListener("click", function() {
+        containerDesc.style.top = "1000px";
+        
+        setTimeout(function() {
+            moreImg.style.display = "none";
+    
+            containerImg.style.display = "block";
+            
+            containerDescText.style.display = "block";
+            
+            containerDesc.style.display = "flex";
+            containerDesc.style.marginTop = "25px";
+        
+        
+            backZoom.style.display = "none";
+            }, 1000);
+    
+            setTimeout(function() {
+                containerDesc.style.top = "0px";
+    
+                }, 1100);
+    })
+}
 
 
 // back zoom img gîte
-backZoom.addEventListener("click", function() {
-    containerDesc.style.top = "1000px";
-    
-    setTimeout(function() {
-        moreImg.style.display = "none";
 
-        containerImg.style.display = "block";
-        
-        containerDescText.style.display = "block";
-        
-        containerDesc.style.display = "flex";
-        containerDesc.style.marginTop = "25px";
-    
-    
-        backZoom.style.display = "none";
-        }, 1000);
-
-        setTimeout(function() {
-            containerDesc.style.top = "0px";
-
-            }, 1100);
-})
 
